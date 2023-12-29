@@ -1,1 +1,26 @@
-My design here : https://www.figma.com/file/ffl2NQoVEP0UGslCWWDGDt/Planner?type=design&node-id=0%3A1&mode=design&t=xjfGVUbaOilYNLuV-1
+# Project Name
+
+A brief description of your project.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Provide a brief overview of your project.
+
+## Features
+
+List the key features of your project.
+
+## Installation
+
+Include instructions on how to install your project. For example:
+
+```bash
+npm install
