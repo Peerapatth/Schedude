@@ -27,4 +27,5 @@ body {
   background-color: var(--wht);
   font-family: var(--head);
   color: var(--bck);
+  transition: background-color 0.5s, color 0.5s;
 }
