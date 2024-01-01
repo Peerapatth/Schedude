@@ -1,13 +1,12 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
-    onMount(() => {
-        
-    });
+  onMount(() => {});
 
-    function handleSubmit() {
-        window.location.href = "/Schedule";
-    }
+  function handleSubmit() {
+    console.log("Login successful!");
+    window.location.href = "/Schedule";
+  }
 </script>
 
 <div class="container">
@@ -15,7 +14,7 @@
     <div class="logo">
       <img src="/Logo.png" alt="logo" />
     </div>
-    <h1>CREATE ACCOUNT</h1>
+    <h1>LOGIN</h1>
     <form>
       <div class="input-group">
         <label for="username">Username</label>
@@ -35,21 +34,12 @@
           placeholder="Enter your password"
         />
       </div>
-      <div class="input-group">
-        <label for="password">Confirm Password</label>
-        <input
-          type="password"
-          id="Comfirm-Password"
-          name="password"
-          placeholder="Confirm your password"
-        />
-      </div>
       <div>
-        <input type="submit" value="CREATE ACCOUNT" on:click={handleSubmit} />
+        <input type="submit" value="LOGIN" on:click={handleSubmit} />
       </div>
     </form>
     <p style="text-align: center;">
-      Already have an account? <a href="/Login">Login</a>
+      Don't have an account? <a href="/CreateAccount">Create Account</a>
     </p>
   </div>
 </div>
@@ -109,6 +99,7 @@
     color: var(--bck);
     margin-bottom: 3px;
     font-weight: 500;
+    margin-left: 5px;
   }
 
   input {
@@ -121,6 +112,8 @@
     border-radius: 5px;
     font-family: var(--txt);
     font-size: var(--XS);
+    display: flex;
+    align-items: center;
   }
 
   input[type="submit"] {
@@ -131,6 +124,9 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   input[type="submit"]:hover {
@@ -161,7 +157,8 @@
     }
 
     input[type="submit"] {
-      width: 200px;    margin-top: 5px;
+      width: 200px;
+      margin-top: 5px;
     }
 
     .logo {
@@ -170,7 +167,7 @@
 
     h1 {
       font-size: var(--S);
-      margin-bottom: 5PX;
+      margin-bottom: 5px;
     }
 
     label {
@@ -203,55 +200,55 @@
     }
   }
 
-    @media screen and (max-width: 600px) {
-        .box {
-        width: 250px;
-        }
-    
-        input {
-        width: 200px;
-        }
-    
-        input[type="submit"] {
-        width: 150px;
-        }
-    
-        .logo {
-        margin-bottom: 10px;
-        }
-    
-        h1 {
-        font-size: var(--XS);
-        margin-bottom: 5PX;
-        }
-    
-        label {
-        font-size: var(--XXS);
-        }
-    
-        input {
-        font-size: var(--XXS);
-        }
-    
-        input[type="submit"] {
-        font-size: var(--XS);
-        }
-    
-        p {
-        font-size: var(--XXS);
-        }
-    
-        a {
-        font-size: var(--XXS);
-        }
-    
-        img {
-        width: 50px;
-        height: 50px;
-        }
-    
-        .input-group {
-        margin-bottom: 5px;
-        }
+  @media screen and (max-width: 600px) {
+    .box {
+      width: 250px;
     }
+
+    input {
+      width: 200px;
+    }
+
+    input[type="submit"] {
+      width: 150px;
+    }
+
+    .logo {
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: var(--XS);
+      margin-bottom: 5px;
+    }
+
+    label {
+      font-size: var(--XXS);
+    }
+
+    input {
+      font-size: var(--XXS);
+    }
+
+    input[type="submit"] {
+      font-size: var(--XS);
+    }
+
+    p {
+      font-size: var(--XXS);
+    }
+
+    a {
+      font-size: var(--XXS);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .input-group {
+      margin-bottom: 5px;
+    }
+  }
 </style>
