@@ -1,3 +1,1 @@
-# Developing....
 
-<img width="100%" alt="Schedude" src="https://github.com/Peerapatth/Schedude/assets/108524380/853764c6-5fd2-4d9a-9c2b-0d2739a6c1e1">
