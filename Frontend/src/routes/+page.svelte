@@ -50,7 +50,7 @@
             <h3>EXERCISE</h3>
           </div>
           <div class="ExerciseContainer">
-            <div class="ExerciseTime"><h2>17:08 min</h2></div>
+            <div class="ExerciseTime"><h2>17:18 min</h2></div>
             <div class="ExerciseButton"><h3>START</h3></div>
           </div>
         </div>
