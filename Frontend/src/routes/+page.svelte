@@ -21,12 +21,23 @@
       <div class="Schedule">
         <h3>TODAY'S SCHEDULE</h3>
       </div>
-      <div class="TodayScheduleEvent">Today's Event</div>
+      <div class="TodayScheduleEvent">
+        <div class="Event-Body">
+          <div class="Event">
+            <span class="Event-Time">07:00 AM</span>
+            <span class="Event-Title">Morning Walk</span>
+            <span class="Event-Delete">-</span> 
+          </div>
+        </div>
+        <div class="AddEvent"><h3>Add Event</h3></div>
+
+      </div>
+
     </div>
   </div>
   <div class="Right">
     <div class="Right-Top">
-      <div class="TodayGoal">
+      <div class="TodayGoal"> 
         <h3>TODAY'S GOAL</h3>
       </div>
       <div class="TodayGoalEvent">Today's Goal</div>
@@ -38,7 +49,7 @@
         </div>
         <div class="SleepContainer">
           <div class="SleepTime"><h2>7</h2>
-          <h4>HR</h4>
+          <h4>&nbspHR</h4>
           </div>
           <div class="SleepUp">
             <h2>+</h2>
@@ -69,7 +80,6 @@
       </div>
     </div>
     <div class="Right-Bottom">
-      <h2>Right-Bottom</h2>
     </div>
   </div>
 </div>
@@ -140,10 +150,26 @@
   .TodayScheduleEvent {
     margin-top: 6px;
     width: 100%;
-    height: 43vh;
+    bottom: 0;
     border: 1px solid var(--bck);
     border-radius: 10px;
     padding: 10px;
+  }
+
+  .Event-Body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .AddEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--bck);
+    border-radius: 10px;
   }
 
   .TodayGoalEvent {
@@ -208,5 +234,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .Right-Top{
+    width: 100%;
+    padding: 10px;
+  }
+  .Right-Bottom{
+    width: 100%;
+    border: 1px solid var(--bck);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 16px;
   }
 </style>
